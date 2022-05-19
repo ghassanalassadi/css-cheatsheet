@@ -1,3 +1,57 @@
+:root {
+    --main-font: Arial;
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+}
+
 body {
-    background-color: aqua;
+    background-color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.main-heading {
+    font-family: var(--main-font);
+    font-size: 50px;
+    text-align: center;
+}
+
+.main-paragraph {
+        font-family: var(--main-font);
+        font-size: 26px;
+        text-align: center;
+}
+
+.code-box {
+    background-color: green;
+    margin: 150px;
+    border: 5px solid palevioletred;
+}
+
+.code-heading {
+    background-color: red;
+}
+
+.code-desc {
+    background-color: brown;
+}
+
+.code-snippet {
+    background-color: lightblue;
+    white-space: pre-line;
 }
